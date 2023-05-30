@@ -21,4 +21,17 @@ git_vaccinate()
 usethis::use_git()
 
 use_github()
+
+```
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+library(ggplot2)
+
+data <- palmerpenguins::penguins 
+
+plot <- ggplot(data = data, aes(x = species, y = body_mass_g)) +
+  geom_point()
+plot
 ```
