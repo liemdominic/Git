@@ -35,3 +35,15 @@ plot <- ggplot(data = data, aes(x = species, y = body_mass_g)) +
   geom_point()
 plot
 ```
+
+prøv dette plottet tjommi
+
+```{r}
+plot <- ggplot(data = data, aes(y = body_mass_g, fill = species)) +
+  geom_histogram() +
+  theme_bw() +
+  facet_wrap(~ island) +
+  labs(title = "Penguin weight across habitats",
+       y = "Body mass")
+plot
+```
