@@ -2,10 +2,23 @@
 title: "Git"
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Github
 
 ```{r}
-1 + 1
+library(usethis)
+use_git_config(
+  user.name = "liemdominic",
+  user.email = "lje006@uib.no"
+)
+
+usethis::create_github_token()
+
+
+gitcreds::gitcreds_set()
+
+git_vaccinate()
+
+usethis::use_git()
+
+use_github()
 ```
